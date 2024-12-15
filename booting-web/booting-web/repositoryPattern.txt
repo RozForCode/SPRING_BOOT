@@ -1,0 +1,8 @@
+The repository pattern in Spring Data provides an abstraction layer to manage data access operations, hiding database logic from business logic. It originated from domain-driven design and is particularly powerful in microservices. By using repositories, you prevent data access logic from leaking into your application, reducing bottlenecks caused by databases. Repositories allow operations to focus on single business objects at a time, performing separate database transactions for multiple entities.
+
+In Spring Data, the general strategy involves:
+
+Creating a repository interface (or extending a predefined one using generics).
+Defining common data access methods, many of which are already provided.
+Adding any additional business logic as needed.
+This abstraction simplifies data management and aligns well with microservice architecture by focusing on single entities and clean separation of concerns.
